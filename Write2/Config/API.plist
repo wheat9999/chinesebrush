@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>version</key>
+	<integer>0</integer>
+	<key>api_host</key>
+	<string>http://115.29.237.213/writeapp</string>
+	<key>res_host</key>
+	<string>http://www.51duoying.com</string>
+	<key>api</key>
+	<dict>
+		<key>action_add</key>
+		<string>index.php?r=actionlog/add</string>
+		<key>poem_search</key>
+		<string>index.php?r=poem/search</string>
+		<key>poem_add</key>
+		<string>index.php?r=poem/add</string>
+		<key>poem_audit</key>
+		<string>index.php?r=poem/audit</string>
+		<key>poem_detail</key>
+		<string>index.php?r=poem/detail</string>
+		<key>poem_draft</key>
+		<string>index.php?r=poem/draft</string>
+	</dict>
+	<key>res</key>
+	<dict>
+		<key>brand_icon</key>
+		<string>data/brandlogo</string>
+	</dict>
+</dict>
+</plist>

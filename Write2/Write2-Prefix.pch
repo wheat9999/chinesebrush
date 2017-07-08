@@ -1,0 +1,37 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <CoreData/CoreData.h>
+    #import "Env.h"
+#import "BaseDAO.h"
+#import "AGHttpUtil.h"
+#import "AGProgressHUD.h"
+
+#define RGBA(r, g, b, a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+#define RGB(r, g, b) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:1.0f]
+
+#define Rect(x,y,w,h) CGRectMake(x, y, w, h)
+
+#define StoreFloat(key) [[[[[BaseDAO sharedInstance] getList:@"Config" andCondition:@{@"key":key}] objectAtIndex:0] valueForKey:@"value"] floatValue]
+
+#define StoreInt(key) [[[[[BaseDAO sharedInstance] getList:@"Config" andCondition:@{@"key":key}] objectAtIndex:0] valueForKey:@"value"] intValue]
+
+#define Store(key) [[[[BaseDAO sharedInstance] getList:@"Config" andCondition:@{@"key":key}] objectAtIndex:0] valueForKey:@"value"]
+
+#define I2S(i) [NSString stringWithFormat:@"%d",i]
+
+#define Update(key,value)  [[BaseDAO sharedInstance] update:@"Config" andCondition:@{@"key":key} andValue:@{@"value":value}]
+
+#endif

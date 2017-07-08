@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>used</key>
+	<string>true</string>
+	<key>brush_percent</key>
+	<string>0.6</string>
+	<key>remain_time</key>
+	<string>1</string>
+	<key>animation_time</key>
+	<string>1</string>
+	<key>arrange_type</key>
+	<string>0</string>
+	<key>line_num</key>
+	<string>7</string>
+	<key>word_height</key>
+	<string>70</string>
+	<key>word_width</key>
+	<string>70</string>
+	<key>write_height</key>
+	<string>300</string>
+	<key>write_width</key>
+	<string>300</string>
+	<key>pannel_bg</key>
+	<string>4</string>
+	<key>write_bg</key>
+	<string>3</string>
+	<key>brush_mode</key>
+	<string>1</string>
+	<key>paomadeng_speed</key>
+	<string>10</string>
+	<key>author_name</key>
+	<string>忠实粉丝</string>
+	<key>poem_title</key>
+	<string>none</string>
+	<key>poem_id</key>
+	<string>0</string>
+</dict>
+</plist>
